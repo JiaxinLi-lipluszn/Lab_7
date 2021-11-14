@@ -32,6 +32,7 @@ public class App extends Application{
             );
             channel2.setDescription("This is Channels 2");
 
+
             NotificationManager manager = getSystemService(NotificationManager.class);
             manager.createNotificationChannel(channel1);
             manager.createNotificationChannel(channel2);

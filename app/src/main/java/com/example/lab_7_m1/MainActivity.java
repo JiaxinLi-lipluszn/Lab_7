@@ -27,6 +27,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void sendOnChannel1(View v){
+        editTextTitle = (EditText) findViewById(R.id.editTextTextPersonName);
+        editTextMessage = (EditText) findViewById(R.id.editTextTextPersonName2);
+
         String title = editTextTitle.getText().toString();
         String message = editTextMessage.getText().toString();
 
@@ -40,7 +43,11 @@ public class MainActivity extends AppCompatActivity {
         notificationManager.notify(1, notification);
     }
 
+
     public void sendOnChannel2(View v){
+        editTextTitle = (EditText) findViewById(R.id.editTextTextPersonName);
+        editTextMessage = (EditText) findViewById(R.id.editTextTextPersonName2);
+
         String title = editTextTitle.getText().toString();
         String message = editTextMessage.getText().toString();
 
@@ -53,5 +60,6 @@ public class MainActivity extends AppCompatActivity {
                 .build();
         notificationManager.notify(2, notification);
     }
+
 
 }
